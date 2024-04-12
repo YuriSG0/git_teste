@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def validarmes(x,y=''):
         if x[0] == 'J':
             print('PRIMEIRO MES DO ANO')
@@ -7,6 +9,8 @@ def validarmes(x,y=''):
 
 mes = 'JFM'
 mes2 = 'AMJ'
-
+atual = datetime.now()
+mes_atual = atual.month
+print(mes_atual)
 validarmes(mes2)
 
